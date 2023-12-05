@@ -1,0 +1,240 @@
+.containerMenu {
+    width: var(--menu-width);
+    height: var(--menu-height);
+    margin: var(--menu-margin);
+    min-height: var(--menu-min-height);
+    background-image: var(--menu-color);
+    box-shadow: 4px 2px 8px var(--shadow-color);
+    transition: all 0.7s ease;
+    max-width: 300px;
+}
+
+.containerMenu:hover {
+    width: 19%;
+    margin: var(--menu-margin);
+}
+
+.containerMenu90 {
+    width: 90%;
+    height: auto;
+    max-height: 80%;
+    padding: 10px 0px 60px 0px;
+    margin: 20px auto auto auto;
+}
+
+.containerMenu90 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.containerMenuLogo {
+    width: 90%;
+    height: 30%;
+    min-height: 100px;
+    max-height: 160px;
+    display: var(--menu-display);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.containerMenuLogo img {
+    height: 120px;
+    width: auto;
+    max-width: 120px;
+    object-fit: contain;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerMenuLine {
+    width: 80%;
+    height: 10px;
+    margin: 15px auto 40px auto;
+    border-bottom: 1px solid rgba(232, 233, 235, 0.2);
+}
+
+.containerMenuLinks {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.containerMenuLinks:hover {
+    background-color: rgba(70, 70, 70, 0.5);
+    border-radius: 5px;
+}
+
+.containerMenuIcon {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 50px;
+    padding-left: 5px;
+    min-width: 45px;
+}
+
+.menuIcon{
+    color: #FFF;
+    max-width: 50px;
+}
+
+
+.containerMenuText {
+    width: auto;
+    height: auto;
+    display: var(--menu-display);
+    min-width: 160px;
+    max-width: 160px;
+    padding: 0px 10px;
+}
+.containerMenuText p {
+    text-align: left;
+    padding-top: 15px;
+    color: var(--font-menu-color);
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.containerMenu:hover .containerMenuText{
+    display: block;
+
+}
+
+
+.containerMenuMobile {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    display: none;
+    background-image: var(--menu-color);
+}
+
+.menuConfigItemsMobile {
+    width: 10%;
+    height: 100%;
+}
+
+.menuIconMobile {
+    color: #2e2e2e;
+    margin: 15px 0px 0px 20px;
+}
+
+.optionsMobile.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: 500ms ease;
+    z-index: 10;
+    position: absolute;
+}
+
+.optionsMobile.inactive {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 500ms ease;
+}
+
+.optionsMobile button {
+    width: 100%;
+    border-radius: 50%;
+    background-color: #2b2b2b;
+}
+
+.optionsMobile ul{
+    list-style-type: none;
+
+    width: 150px;
+    height: 180px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: var(--container-color);
+    box-shadow: 2px 2px 2px var(--shadow-color);
+    border-radius: 5px;
+}
+
+.optionsMobile a {
+    text-decoration: none;
+}
+
+.optionsMobile li {
+    display: flex;
+    cursor: pointer;
+    color: var(--font-color);
+    margin: 25px auto 10px auto;
+}
+
+.optionsMobile li p {
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.menuContentUserOptions {
+    width: 80%;
+    height: 80%;
+    margin: 5px auto auto auto;
+}
+
+.menuContentUserOptions button {
+    width: 60px;
+    height: 100%;
+    border-radius: 100%;
+
+    background-color: rgb(255, 0, 98);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .containerMenuText p {
+        font-size: 0.75rem;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+.containerMenu{
+    display: none;
+}
+
+.containerMenuMobile {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuContentUserOptions button {
+    width: 50px;
+
+}
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .containerMenuMobile {
+        padding: 0px 20px 0px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .containerMenuMobile {
+        padding: 0px 30px 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .containerMenuMobile {
+        padding: 0px 50px 0px 0px;
+    }
+}
