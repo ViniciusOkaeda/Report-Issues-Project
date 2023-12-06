@@ -2,6 +2,7 @@ import React from "react";
 import './dashboard.css'
 import ThemeConfig from "../../theme/themeConfig";
 import Menu from "../../components/menu/menu";
+import PageHeader from "../../components/pageHeader/pageHeader";
 
 
 function Dashboard() {
@@ -12,7 +13,12 @@ function Dashboard() {
             <ThemeConfig />
 
 
-            <div className="container"></div>
+            <div className="container">
+
+                <div className="displayContent">
+                    <PageHeader />
+                </div>
+            </div>
         </div>
     )
 }

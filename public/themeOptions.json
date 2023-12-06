@@ -40,11 +40,11 @@
 
             "menuColor": [
                 {
-                    "color": "linear-gradient(to left top, #3f4d67, #3a566e, #375f72, #376874, #3d7074)",
+                    "color": "linear-gradient(to top, #3f4d67, #3a566e, #375f72, #376874, #3d7074)",
                     "fontColor": "#e8e9eb"
                 },
                 {
-                    "color": "linear-gradient(to left top, #fc5b8f, #fd4e79, #fb4262, #f7384a, #f03330)",
+                    "color": "linear-gradient(to top, #fc5b8f, #fd4e79, #fb4262, #f7384a, #f03330)",
                     "fontColor": "#e8e9eb"
                 },
                 {
@@ -60,7 +60,45 @@
                     "fontColor": "#e8e9eb"
                 },
                 {
-                    "color": "linear-gradient(to left top, #1e8af8, #1280f9, #1376f9, #206bf7, #305ff5)",
+                    "color": "linear-gradient(to top, #1e8af8, #1280f9, #1376f9, #206bf7, #305ff5)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(to top, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(to top, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(to bottom, hsla(50, 57%, 47%, 1) 0%, hsla(56, 83%, 82%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(0deg, hsla(268, 10%, 30%, 1) 0%, hsla(268, 11%, 69%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(to top, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+
+
+                {
+                    "color": "linear-gradient(to top, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(0deg, hsla(212, 35%, 58%, 1) 0%, hsla(218, 32%, 80%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(to top, hsla(282, 36%, 25%, 1) 0%, hsla(310, 22%, 37%, 1) 100%)",
+                    "fontColor": "#e8e9eb"
+                },
+                {
+                    "color": "linear-gradient(0deg, hsla(232, 14%, 21%, 1) 0%, hsla(228, 13%, 22%, 1) 100%)",
                     "fontColor": "#e8e9eb"
                 }
             ],
@@ -71,21 +109,27 @@
                     "menuHeight": "100vh",
                     "menuMinHeight": "1080px",
                     "menuDisplay": "block",
-                    "menuMargin": "auto 1% auto auto"
+                    "menuMargin": "auto 0 auto auto",
+                    "externalHeight": "100vh",
+                    "externalBorder": "none"
                 },
                 {
-                    "menuWidth": "6vw",
+                    "menuWidth": "5vw",
                     "menuHeight": "100vh",
                     "menuMinHeight": "1080px",
                     "menuDisplay": "none",
-                    "menuMargin": "auto 1% auto 0%"
+                    "menuMargin": "auto 0 auto 0%",
+                    "externalHeight": "100vh",
+                    "externalBorder": "none"
                 },
                 {
-                    "menuWidth": "6vw",
+                    "menuWidth": "5vw",
                     "menuHeight": "100vh",
                     "menuMinHeight": "1080px",
                     "menuDisplay": "none",
-                    "menuMargin": "auto 0% auto 0%"
+                    "menuMargin": "auto 0% auto 0%",
+                    "externalHeight": "98vh",
+                    "externalBorder": "10px"
                 }
 
             ]

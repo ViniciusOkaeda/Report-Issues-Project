@@ -18,11 +18,13 @@
   --menu-color: linear-gradient(to top, #354b46, #374d48, #394f4a, #3c524d, #3e544f);
   --font-menu-color: #e8e9eb;
 
-  --menu-width: 19%;
-  --menu-height: 100%;
+  --menu-width: 19vw;
+  --menu-height: 100vh;
   --menu-min-height: 1080px;
   --menu-display: block;
-  --menu-margin: auto 1% auto auto;
+  --menu-margin: auto 0 auto auto;
+  --external-height: 100vh;
+  --external-border: none;
 
   --bg-button-color: rgb(36, 36, 36);
   --bg-effect-color: rgb(54, 54, 54);
@@ -39,15 +41,30 @@ body {
 .content {
   width: 100%;
   height: auto;
+  background-image: var(--menu-color);
   min-height: 500px;
+  /*
   padding-bottom: 30px;
+  */
   display: flex;
 }
 
 .container {
   width: 100%;
-  height: 150vh;
-  background-color: red;
+  height: 100vh;
+  background-image: var(--menu-color);
+  display: flex;
+  align-items: center;
+}
+
+.displayContent {
+  width: 100%;
+  /*
+  precisa incluir o height e border-radius no theme
+  */
+  height: var(--external-height);
+  background-image: var(--theme-color);
+  border-radius: var(--external-border);
 }
 
 .headerContent {

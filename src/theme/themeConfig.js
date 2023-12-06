@@ -40,6 +40,8 @@ const ThemeConfig = () => {
                 menuMinHeight: '',
                 menuDisplay: '',
                 menuMargin: '',
+                externalHeight: '',
+                externalBorder: ''
             }
         ],
 
@@ -94,7 +96,9 @@ const ThemeConfig = () => {
                     menuHeight: '',
                     menuMinHeight: '',
                     menuDisplay: '',
-                    menuMargin: ''
+                    menuMargin: '',
+                    externalHeight: '',
+                    externalBorder: ''
                 }
 
                 localStorage.setItem("palette-menu-type-list", JSON.stringify(palette_menu_type_list))
@@ -187,6 +191,8 @@ const ThemeConfig = () => {
         document.documentElement.style.setProperty('--menu-min-height', palette_menu_type_list.menuMinHeight);
         document.documentElement.style.setProperty('--menu-display', palette_menu_type_list.menuDisplay);
         document.documentElement.style.setProperty('--menu-margin', palette_menu_type_list.menuMargin);
+        document.documentElement.style.setProperty('--external-height', palette_menu_type_list.externalHeight);
+        document.documentElement.style.setProperty('--external-border', palette_menu_type_list.externalBorder);
     }
 
     const setMenuType = (event) => {
@@ -195,7 +201,9 @@ const ThemeConfig = () => {
             menuHeight: event.target.style.getPropertyValue('--menu-height'),
             menuMinHeight: event.target.style.getPropertyValue('--menu-min-height'),
             menuDisplay: event.target.style.getPropertyValue('--menu-display'),
-            menuMargin: event.target.style.getPropertyValue('--menu-margin')
+            menuMargin: event.target.style.getPropertyValue('--menu-margin'),
+            externalHeight: event.target.style.getPropertyValue('--external-height'),
+            externalBorder: event.target.style.getPropertyValue('--external-border')
         }
 
         setMenuStyle(palette_menu_type_list);
@@ -288,7 +296,9 @@ const ThemeConfig = () => {
                                             '--menu-height': type.menuHeight,
                                             '--menu-min-height': type.menuMinHeight,
                                             '--menu-display': type.menuDisplay,
-                                            '--menu-margin': type.menuMargin
+                                            '--menu-margin': type.menuMargin,
+                                            '--external-height': type.externalHeight,
+                                            '--external-border': type.externalBorder,
                                         }} 
                                         onClick={setMenuType}>Type {idx+1}</p>
                                     </div>

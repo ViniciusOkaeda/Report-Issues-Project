@@ -2,21 +2,28 @@
     width: var(--menu-width);
     height: var(--menu-height);
     margin: var(--menu-margin);
+    /*
     min-height: var(--menu-min-height);
+    */
     background-image: var(--menu-color);
     box-shadow: 4px 2px 8px var(--shadow-color);
     transition: all 0.7s ease;
     max-width: 300px;
 }
 
+/*
+Para sair o efeito de expandir o menu, deve ser removido abaixo
 .containerMenu:hover {
     width: 19%;
     margin: var(--menu-margin);
 }
 
+*/
+
 .containerMenu90 {
-    width: 90%;
+    width: 100%;
     height: auto;
+    display: block;
     max-height: 80%;
     padding: 10px 0px 60px 0px;
     margin: 20px auto auto auto;
@@ -58,54 +65,65 @@
 
 .containerMenuLinks {
     width: 100%;
-    height: auto;
-    min-height: 50px;
-    margin-bottom: 20px;
+    height: 50px;
     display: flex;
 }
 
-.containerMenuLinks:hover {
+.containerMenuLinks:hover .containerMenuIcon{
     background-color: rgba(70, 70, 70, 0.5);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .containerMenuIcon {
     width: auto;
-    height: auto;
+    height: 35px;
+    padding: 0 7px;
+    border-radius: 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     max-width: 50px;
-    padding-left: 5px;
-    min-width: 45px;
+    background-color: rgba(43, 43, 43, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+
+
 }
 
 .menuIcon{
     color: #FFF;
-    max-width: 50px;
+    max-width: 60px;
 }
 
 
 .containerMenuText {
     width: auto;
-    height: auto;
+    margin-top: 10px;
+    height: 25px;
     display: var(--menu-display);
     min-width: 160px;
-    max-width: 160px;
-    padding: 0px 10px;
+    max-width: 220px;
+    padding: 0 0 0 30px;
 }
 .containerMenuText p {
     text-align: left;
-    padding-top: 15px;
+    padding-top: 5px;
     color: var(--font-menu-color);
     font-size: 1rem;
     font-weight: 100;
 }
 
-.containerMenu:hover .containerMenuText{
+.containerMenuLinks:hover .containerMenuText {
     display: block;
+    position:absolute;
+    left: 4.7%;
+    background-image: var(--menu-color);
+    clip-path: polygon(10% 25%, 10% 0, 100% 0, 100% 100%, 10% 100%, 10% 75%, 0 50%);    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 
 }
+
 
 
 .containerMenuMobile {
